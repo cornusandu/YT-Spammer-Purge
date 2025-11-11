@@ -4,6 +4,8 @@ RUN apt-get update && \
     apt-get install -y gcc \
     cmake \
     python3-dev \
+    libffi-dev \
+    libssl-dev \
     build-essential
 COPY requirements.txt ./
 RUN pip install --no-cache-dir --user -r requirements.txt
