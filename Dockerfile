@@ -10,7 +10,7 @@ RUN apt-get update && \
 COPY requirements.txt ./
 RUN pip install --no-cache-dir --user -r requirements.txt
 
-# Buidl argument to download AI dependencies
+# Build argument to download AI dependencies
 ARG AI_FT=0
 
 RUN if [ $AI_FT -eq "1" ] ; then \
